@@ -1,8 +1,7 @@
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class ErrorTest0 {
 
@@ -20,7 +19,11 @@ public class ErrorTest0 {
         AVLTree.Node node8 = aVLTree0.getRoot();
         aVLTree0.insert((int) (short) 0);
         // during test generation this statement threw an exception of type java.lang.NullPointerException in error
-        aVLTree0.delete(10) ;
+        try {
+            aVLTree0.delete(10);
+        }catch (Exception ex){
+            fail("Null Pointer Exception");
+        }
     }
 }
 
