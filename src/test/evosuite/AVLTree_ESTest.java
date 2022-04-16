@@ -11,7 +11,7 @@ import org.evosuite.runtime.EvoRunner;
 import org.evosuite.runtime.EvoRunnerParameters;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
+@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true)
 public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
 
   @Test(timeout = 4000)
@@ -19,7 +19,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       int int0 = 3323;
       aVLTree0.delete(3323);
       int int1 = (-1534);
@@ -43,10 +43,10 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       aVLTree_Node1.right = aVLTree_Node0;
       int int4 = 4941;
       // Undeclared exception!
-      try { 
+      try {
         aVLTree0.insert(4941);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -115,76 +115,76 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(156);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete((-1650));
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node0);
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node1);
       assertEquals(0, aVLTree0.height());
       assertSame(aVLTree_Node1, aVLTree_Node0);
-      
+
       aVLTree_Node0.left = aVLTree_Node1;
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree_Node1.right = aVLTree_Node0;
       assertEquals(0, aVLTree0.height());
-      
+
       int int0 = aVLTree0.getBalance(aVLTree_Node0);
       assertEquals(0, aVLTree0.height());
       assertSame(aVLTree_Node0, aVLTree_Node1);
       assertEquals(0, int0);
-      
+
       int int1 = aVLTree0.height();
       assertEquals(0, aVLTree0.height());
       assertTrue(int1 == int0);
       assertEquals(0, int1);
-      
+
       AVLTree.Node aVLTree_Node2 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node2);
       assertEquals(0, aVLTree0.height());
       assertSame(aVLTree_Node2, aVLTree_Node1);
       assertSame(aVLTree_Node2, aVLTree_Node0);
-      
+
       aVLTree_Node0.left.left = aVLTree_Node1;
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node3 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node3);
       assertEquals(0, aVLTree0.height());
       assertSame(aVLTree_Node3, aVLTree_Node1);
       assertSame(aVLTree_Node3, aVLTree_Node2);
       assertSame(aVLTree_Node3, aVLTree_Node0);
-      
+
       AVLTree.Node aVLTree_Node4 = aVLTree_Node3.left;
       assertNotNull(aVLTree_Node4);
       assertSame(aVLTree_Node4, aVLTree_Node0);
       assertSame(aVLTree_Node4, aVLTree_Node2);
       assertSame(aVLTree_Node4, aVLTree_Node3);
       assertSame(aVLTree_Node4, aVLTree_Node1);
-      
+
       AVLTree.Node aVLTree_Node5 = aVLTree_Node0.left;
       assertNotNull(aVLTree_Node5);
       assertSame(aVLTree_Node5, aVLTree_Node0);
@@ -192,7 +192,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       assertSame(aVLTree_Node5, aVLTree_Node1);
       assertSame(aVLTree_Node5, aVLTree_Node2);
       assertSame(aVLTree_Node5, aVLTree_Node4);
-      
+
       int int2 = aVLTree0.getBalance(aVLTree_Node0.left);
       assertEquals(0, aVLTree0.height());
       assertTrue(int2 == int1);
@@ -203,7 +203,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       assertSame(aVLTree_Node0, aVLTree_Node4);
       assertSame(aVLTree_Node0, aVLTree_Node1);
       assertEquals(0, int2);
-      
+
       int int3 = (-1777);
       aVLTree0.insert(int3);
       int int4 = (-1);
@@ -215,95 +215,95 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete(3323);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert((-1534));
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete(3323);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert(1973);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(1);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.find(1973);
       assertNotNull(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(2, aVLTree0.height());
-      
+
       aVLTree_Node0.height = 0;
       assertEquals(2, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node1);
       assertEquals(2, aVLTree0.height());
       assertFalse(aVLTree_Node1.equals((Object)aVLTree_Node0));
       assertNotSame(aVLTree_Node1, aVLTree_Node0);
-      
+
       aVLTree0.delete(1);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node1.height = (-387);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node2 = aVLTree_Node1.left;
       assertNull(aVLTree_Node2);
-      
+
       aVLTree_Node0.right = null;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node0.key = 1;
       assertEquals(1, aVLTree0.height());
-      
+
       int int0 = aVLTree0.getBalance(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
       assertFalse(aVLTree_Node0.equals((Object)aVLTree_Node1));
       assertNotSame(aVLTree_Node0, aVLTree_Node1);
       assertEquals(0, int0);
-      
+
       aVLTree_Node1.right = aVLTree_Node0;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(4941);
       assertEquals(2, aVLTree0.height());
-      
+
       aVLTree0.delete(4941);
       assertEquals(2, aVLTree0.height());
-      
+
       aVLTree_Node1.right = null;
       assertEquals(2, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals(2, aVLTree0.height());
-      
+
       int int1 = aVLTree0.getBalance((AVLTree.Node) null);
       assertEquals(2, aVLTree0.height());
       assertTrue(int1 == int0);
       assertEquals(0, int1);
-      
+
       aVLTree0.delete(1);
       assertEquals(2, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node3 = aVLTree0.find(3323);
       assertNull(aVLTree_Node3);
       assertEquals(2, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals(2, aVLTree0.height());
-      
+
       int int2 = aVLTree0.getBalance((AVLTree.Node) null);
       assertEquals(2, aVLTree0.height());
       assertTrue(int2 == int0);
       assertTrue(int2 == int1);
       assertEquals(0, int2);
-      
+
       AVLTree.Node aVLTree_Node4 = aVLTree0.find((-387));
       assertNull(aVLTree_Node4);
       assertEquals(2, aVLTree0.height());
@@ -314,44 +314,44 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.new Node((-2810));
       assertNotNull(aVLTree_Node0);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree_Node0.key = 0;
       assertEquals(0, aVLTree0.height());
-      
+
       int int0 = aVLTree0.getBalance(aVLTree_Node0);
       assertEquals(0, aVLTree0.height());
       assertEquals(0, int0);
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node1);
       assertEquals(0, aVLTree0.height());
       assertFalse(aVLTree_Node1.equals((Object)aVLTree_Node0));
       assertNotSame(aVLTree_Node1, aVLTree_Node0);
-      
+
       aVLTree0.delete((-476));
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert((-2857));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node0.height = 1;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node1.left = aVLTree_Node0;
       assertEquals(1, aVLTree0.height());
-      
+
       // Undeclared exception!
-      try { 
+      try {
         aVLTree0.delete(747);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -365,79 +365,79 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(2981);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete(2981);
       assertEquals((-1), aVLTree0.height());
-      
+
       int int0 = aVLTree0.height();
       assertEquals((-1), aVLTree0.height());
       assertEquals((-1), int0);
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.new Node(0);
       assertNotNull(aVLTree_Node0);
       assertEquals((-1), aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.new Node(0);
       assertNotNull(aVLTree_Node1);
       assertEquals((-1), aVLTree0.height());
       assertFalse(aVLTree_Node1.equals((Object)aVLTree_Node0));
-      
+
       aVLTree_Node1.right = aVLTree_Node0;
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree_Node1.key = 0;
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree_Node0.left = aVLTree_Node1;
       assertEquals((-1), aVLTree0.height());
-      
+
       int int1 = aVLTree0.getBalance(aVLTree_Node0);
       assertEquals((-1), aVLTree0.height());
       assertFalse(aVLTree_Node0.equals((Object)aVLTree_Node1));
       assertTrue(int1 == int0);
       assertNotSame(aVLTree_Node0, aVLTree_Node1);
       assertEquals((-1), int1);
-      
+
       AVLTree.Node aVLTree_Node2 = aVLTree0.find(0);
       assertNull(aVLTree_Node2);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree_Node1.left = null;
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete((-4252));
       assertEquals((-1), aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node3 = aVLTree0.getRoot();
       assertNull(aVLTree_Node3);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree_Node0.left.left = null;
       assertEquals((-1), aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node4 = aVLTree0.find(0);
       assertNull(aVLTree_Node4);
       assertEquals((-1), aVLTree0.height());
-      
+
       int int2 = aVLTree0.height();
       assertEquals((-1), aVLTree0.height());
       assertTrue(int2 == int0);
       assertTrue(int2 == int1);
       assertEquals((-1), int2);
-      
+
       int int3 = aVLTree0.height();
       assertEquals((-1), aVLTree0.height());
       assertTrue(int3 == int0);
       assertTrue(int3 == int1);
       assertTrue(int3 == int2);
       assertEquals((-1), int3);
-      
+
       int int4 = aVLTree0.getBalance(aVLTree_Node0.left);
       assertEquals((-1), aVLTree0.height());
       assertFalse(int4 == int1);
@@ -452,7 +452,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       assertNotSame(aVLTree_Node0.left, aVLTree_Node0);
       assertSame(aVLTree_Node0.left, aVLTree_Node1);
       assertEquals(1, int4);
-      
+
       aVLTree0.insert((-1457));
       assertEquals(0, aVLTree0.height());
   }
@@ -462,83 +462,83 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(1);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert((-1193));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.find(0);
       assertNotNull(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.new Node(0);
       assertNotNull(aVLTree_Node1);
       assertEquals(1, aVLTree0.height());
       assertFalse(aVLTree_Node1.equals((Object)aVLTree_Node0));
-      
+
       aVLTree_Node1.left = aVLTree_Node0;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node0.key = (-1193);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node1.left = aVLTree_Node0;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node0.left = aVLTree_Node1;
       assertEquals(1, aVLTree0.height());
-      
+
       int int0 = aVLTree0.getBalance(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
       assertFalse(aVLTree_Node0.equals((Object)aVLTree_Node1));
       assertNotSame(aVLTree_Node0, aVLTree_Node1);
       assertEquals(0, int0);
-      
+
       aVLTree_Node0.left.right = aVLTree_Node1;
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node2 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node2);
       assertEquals(1, aVLTree0.height());
       assertFalse(aVLTree_Node2.equals((Object)aVLTree_Node1));
       assertNotSame(aVLTree_Node2, aVLTree_Node1);
       assertSame(aVLTree_Node2, aVLTree_Node0);
-      
+
       aVLTree_Node0.left.height = 0;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node2.right = aVLTree_Node1.left;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node2.right = aVLTree_Node1;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node0.left = aVLTree_Node1.left;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node0.left.height = 0;
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree_Node0.left.height = (-1193);
       assertEquals((-1193), aVLTree0.height());
-      
+
       aVLTree_Node0.left.key = 0;
       assertEquals((-1193), aVLTree0.height());
-      
+
       aVLTree_Node2.right = aVLTree_Node0.left;
       assertEquals((-1193), aVLTree0.height());
-      
+
       aVLTree_Node2.right.key = 2245;
       assertEquals((-1193), aVLTree0.height());
-      
+
       aVLTree_Node0.left.key = (-1193);
       assertEquals((-1193), aVLTree0.height());
-      
+
       // Undeclared exception!
       aVLTree0.find(0);
   }
@@ -548,31 +548,31 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete((-3237));
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(589);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert((-646));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete((-573));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert((-2341));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert((-573));
       assertEquals(2, aVLTree0.height());
-      
+
       aVLTree0.delete(3585);
       assertEquals(2, aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(2, aVLTree0.height());
   }
@@ -582,50 +582,50 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete((-517));
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete((-517));
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(0, aVLTree0.height());
-      
+
       int int0 = (-1764);
       aVLTree0.insert((-1764));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete((-1764));
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete(199);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete((-517));
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete(1);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete(136);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(1);
       assertEquals(0, aVLTree0.height());
-      
+
       int int1 = 0;
       aVLTree0.insert(0);
       assertEquals(1, aVLTree0.height());
-      
+
       // Undeclared exception!
-      try { 
+      try {
         aVLTree0.delete(1);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -639,54 +639,54 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert((-3442));
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert((-1));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete(269);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree_Node0.left;
       assertNotNull(aVLTree_Node1);
       assertFalse(aVLTree_Node1.equals((Object)aVLTree_Node0));
       assertNotSame(aVLTree_Node1, aVLTree_Node0);
-      
+
       aVLTree_Node1.key = 0;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node0.left = aVLTree_Node1;
       assertEquals(1, aVLTree0.height());
-      
+
       int int0 = aVLTree0.getBalance(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
       assertFalse(aVLTree_Node0.equals((Object)aVLTree_Node1));
       assertNotSame(aVLTree_Node0, aVLTree_Node1);
       assertEquals(0, int0);
-      
+
       aVLTree0.delete(269);
       assertEquals(1, aVLTree0.height());
-      
+
       int int1 = aVLTree0.height();
       assertEquals(1, aVLTree0.height());
       assertFalse(int1 == int0);
       assertEquals(1, int1);
-      
+
       aVLTree0.delete((-1));
       assertEquals(1, aVLTree0.height());
-      
+
       int int2 = aVLTree0.getBalance(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
       assertFalse(aVLTree_Node0.equals((Object)aVLTree_Node1));
@@ -694,7 +694,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       assertFalse(int2 == int1);
       assertNotSame(aVLTree_Node0, aVLTree_Node1);
       assertEquals((-1), int2);
-      
+
       AVLTree.Node aVLTree_Node2 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node2);
       assertEquals(1, aVLTree0.height());
@@ -708,45 +708,45 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete(1772);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete((-1));
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert(1772);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(591);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete(1772);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete(1772);
       assertEquals(1, aVLTree0.height());
-      
+
       int int0 = aVLTree0.height();
       assertEquals(1, aVLTree0.height());
       assertEquals(1, int0);
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.find((-561));
       assertNull(aVLTree_Node1);
       assertEquals(1, aVLTree0.height());
-      
+
       // Undeclared exception!
-      try { 
+      try {
         aVLTree0.insert(0);
         fail("Expecting exception: RuntimeException");
-      
+
       } catch(RuntimeException e) {
          //
          // duplicate Key!
@@ -760,33 +760,33 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete(1);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete(1);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert((-1));
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert(1);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(801);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete((-1));
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.find((-1));
       assertNull(aVLTree_Node1);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node2 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node2);
       assertEquals(1, aVLTree0.height());
@@ -798,11 +798,11 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.new Node(1260);
       assertNotNull(aVLTree_Node0);
       assertEquals((-1), aVLTree0.height());
-      
+
       int int0 = aVLTree0.getBalance(aVLTree_Node0);
       assertEquals((-1), aVLTree0.height());
       assertEquals(0, int0);
@@ -813,31 +813,31 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(1698);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete((-1));
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert((-1));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(173);
       assertEquals(1, aVLTree0.height());
-      
+
       int int0 = aVLTree0.height();
       assertEquals(1, aVLTree0.height());
       assertEquals(1, int0);
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.find(490);
       assertNull(aVLTree_Node1);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete(1698);
       assertEquals(1, aVLTree0.height());
   }
@@ -847,53 +847,53 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       int int0 = aVLTree0.height();
       assertEquals((-1), aVLTree0.height());
       assertEquals((-1), int0);
-      
+
       aVLTree0.insert(1374);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert((-1));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert((-16));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete((-1));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert((-1));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete((-16));
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.find((-1));
       assertNotNull(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node0.key = (-845);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert((-1));
       assertEquals(1, aVLTree0.height());
-      
+
       int int1 = aVLTree0.getBalance(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
       assertFalse(int1 == int0);
       assertEquals(0, int1);
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node1);
       assertEquals(1, aVLTree0.height());
       assertFalse(aVLTree_Node1.equals((Object)aVLTree_Node0));
       assertNotSame(aVLTree_Node1, aVLTree_Node0);
-      
+
       aVLTree0.insert((-684));
       assertEquals(2, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node2 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node2);
       assertEquals(2, aVLTree0.height());
@@ -907,25 +907,25 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.getRoot();
       assertNull(aVLTree_Node0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert((-1030));
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.find(0);
       assertNull(aVLTree_Node1);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals(0, aVLTree0.height());
-      
+
       int int0 = aVLTree0.getBalance((AVLTree.Node) null);
       assertEquals(0, aVLTree0.height());
       assertEquals(0, int0);
-      
+
       aVLTree0.delete((-1030));
       assertEquals((-1), aVLTree0.height());
   }
@@ -935,16 +935,16 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals((-1), aVLTree0.height());
-      
+
       int int0 = aVLTree0.height();
       assertEquals((-1), aVLTree0.height());
       assertEquals((-1), int0);
@@ -955,36 +955,36 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert((-1));
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert((-2308));
       assertEquals(1, aVLTree0.height());
-      
+
       int int0 = 752;
       aVLTree0.delete((-1121));
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(752);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(2, aVLTree0.height());
-      
+
       int int1 = 0;
       // Undeclared exception!
-      try { 
+      try {
         aVLTree0.insert(0);
         fail("Expecting exception: RuntimeException");
-      
+
       } catch(RuntimeException e) {
          //
          // duplicate Key!
@@ -998,13 +998,13 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete(374);
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node0);
       assertEquals(0, aVLTree0.height());
@@ -1015,26 +1015,26 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(1);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.delete((-1833));
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.find((-1421));
       assertNull(aVLTree_Node0);
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.find(1);
       assertNotNull(aVLTree_Node1);
       assertEquals(0, aVLTree0.height());
-      
+
       // Undeclared exception!
-      try { 
+      try {
         aVLTree0.insert(1);
         fail("Expecting exception: RuntimeException");
-      
+
       } catch(RuntimeException e) {
          //
          // duplicate Key!
@@ -1048,34 +1048,34 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete(745);
       assertEquals((-1), aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.find((-1));
       assertNull(aVLTree_Node0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(745);
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node1);
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node2 = aVLTree0.find((-1));
       assertNull(aVLTree_Node2);
       assertEquals(0, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node3 = aVLTree0.find(745);
       assertNotNull(aVLTree_Node3);
       assertEquals(0, aVLTree0.height());
       assertSame(aVLTree_Node3, aVLTree_Node1);
-      
+
       int int0 = aVLTree0.height();
       assertEquals(0, aVLTree0.height());
       assertEquals(0, int0);
-      
+
       aVLTree0.insert(404);
       assertEquals(1, aVLTree0.height());
   }
@@ -1085,17 +1085,17 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert(1646);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
-      
+
       int int0 = aVLTree0.height();
       assertEquals(1, aVLTree0.height());
       assertEquals(1, int0);
@@ -1106,7 +1106,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.delete(0);
       assertEquals((-1), aVLTree0.height());
   }
@@ -1116,7 +1116,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.new Node(461);
       assertNotNull(aVLTree_Node0);
       assertEquals((-1), aVLTree0.height());
@@ -1127,44 +1127,44 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert((-1));
       assertEquals(0, aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(2957);
       assertEquals(1, aVLTree0.height());
-      
+
       int int0 = aVLTree0.height();
       assertEquals(1, aVLTree0.height());
       assertEquals(1, int0);
-      
+
       AVLTree.Node aVLTree_Node0 = aVLTree0.find((-1));
       assertNotNull(aVLTree_Node0);
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node1 = aVLTree0.new Node(2957);
       assertNotNull(aVLTree_Node1);
       assertEquals(1, aVLTree0.height());
       assertFalse(aVLTree_Node1.equals((Object)aVLTree_Node0));
-      
+
       aVLTree_Node1.right = aVLTree_Node0;
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node2 = aVLTree_Node1.right;
       assertNotNull(aVLTree_Node2);
       assertFalse(aVLTree_Node2.equals((Object)aVLTree_Node1));
       assertNotSame(aVLTree_Node2, aVLTree_Node1);
       assertSame(aVLTree_Node2, aVLTree_Node0);
-      
+
       aVLTree_Node0.left = aVLTree_Node1.right;
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree_Node0.left = aVLTree_Node2;
       assertEquals(1, aVLTree0.height());
-      
+
       AVLTree.Node aVLTree_Node3 = aVLTree0.find((-1));
       assertNotNull(aVLTree_Node3);
       assertEquals(1, aVLTree0.height());
@@ -1172,7 +1172,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       assertSame(aVLTree_Node3, aVLTree_Node2);
       assertSame(aVLTree_Node3, aVLTree_Node0);
       assertNotSame(aVLTree_Node3, aVLTree_Node1);
-      
+
       int int1 = aVLTree0.getBalance(aVLTree_Node3);
       assertEquals(1, aVLTree0.height());
       assertFalse(aVLTree_Node3.equals((Object)aVLTree_Node1));
@@ -1181,7 +1181,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       assertSame(aVLTree_Node3, aVLTree_Node0);
       assertNotSame(aVLTree_Node3, aVLTree_Node1);
       assertEquals((-1), int1);
-      
+
       AVLTree.Node aVLTree_Node4 = aVLTree0.getRoot();
       assertNotNull(aVLTree_Node4);
       assertEquals(1, aVLTree0.height());
@@ -1193,11 +1193,11 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       assertNotSame(aVLTree_Node4, aVLTree_Node2);
       assertNotSame(aVLTree_Node4, aVLTree_Node0);
       assertNotSame(aVLTree_Node4, aVLTree_Node3);
-      
+
       AVLTree.Node aVLTree_Node5 = aVLTree0.find(2576);
       assertNull(aVLTree_Node5);
       assertEquals(1, aVLTree0.height());
-      
+
       aVLTree0.insert(12);
       assertEquals(2, aVLTree0.height());
   }
@@ -1207,16 +1207,16 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       AVLTree aVLTree0 = new AVLTree();
       assertNotNull(aVLTree0);
       assertEquals((-1), aVLTree0.height());
-      
+
       aVLTree0.insert(0);
       assertEquals(0, aVLTree0.height());
-      
+
       int int0 = 0;
       // Undeclared exception!
-      try { 
+      try {
         aVLTree0.insert(0);
         fail("Expecting exception: RuntimeException");
-      
+
       } catch(RuntimeException e) {
          //
          // duplicate Key!

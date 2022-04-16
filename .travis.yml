@@ -9,4 +9,6 @@ script:
   - "mvn clean"
   - "mvn evosuite:generate"
   - "mvn evosuite:export"
-  - "mvn test jacoco:report coveralls:report"
+  - "mvn test"
+  - "mvn jacoco:report"
+  - "mvn coveralls:report"
