@@ -1,7 +1,4 @@
-after_success:
-  - "mvn org.jacoco:jacoco-maven-plugin:prepare-agent coveralls:report"
-install:
-  - "mvn test-compile -DskipTests=true -Dmaven.javadoc.skip=true -B -V"
+
 jdk:
   - openjdk8
 language: java
@@ -12,3 +9,6 @@ script:
   - "mvn test"
   - "mvn jacoco:report"
   - "mvn coveralls:report"
+
+after_success:
+  - "mvn org.jacoco:jacoco-maven-plugin:prepare-agent coveralls:report"
