@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: ErrorTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
-test1(ErrorTest0)  Time elapsed: 0 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec <<< FAILURE!
+test1(ErrorTest0)  Time elapsed: 0.026 sec  <<< FAILURE!
 java.lang.AssertionError: Null Pointer Exception
 	at org.junit.Assert.fail(Assert.java:89)
 	at ErrorTest0.test1(ErrorTest0.java:25)
